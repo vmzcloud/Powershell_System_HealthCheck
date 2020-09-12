@@ -1,0 +1,4 @@
+Profile,SSH_Port_Test,RDP_Port_Test
+Linux_Server,1,0
+Windows_Server,0,1
+Ping_Only,0,0
