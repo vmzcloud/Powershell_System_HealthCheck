@@ -1,0 +1,7 @@
+Project,Profile,Hostname,IP,user,Pass,snmp_community
+Hello,Synology_NAS,NAS01,192.168.15.21,-,-,public
+Hello,Server_UPS,UPS01,192.168.15.22,-,-,public
+Hello,ESXi,ESX01,192.168.15.23,-,-,-
+Hello,HP_iLO,ESX01-iLo,192.168.15.24,administrator,P@ssw0rd,-
+Hello,Windows_Server,Win01,192.168.15.25,-,-,-
+Hello,Linux_Server,Lin01,192.168.15.26,admin,P@ssw0rd,-
