@@ -3,7 +3,7 @@ Get-ChildItem ".\Function\Function_*.ps1" | %{.$_}
 #set plink directory path
 $env:Path += "D:\Benny\HealthCheck\System_HealthCheck"
 $CSV_Base = ".\CSV"
-$Server_csv = ".\EAAS.csv"
+$Server_csv = ".\Example.csv"
 $Profile_csv = ".\Info\Server_Profile.csv"
 
 Housekeep_CSV_Folder
