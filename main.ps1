@@ -7,7 +7,7 @@ $Server_csv = ".\Example.csv"
 $Profile_csv = ".\Info\Server_Profile.csv"
 
 Housekeep_CSV_Folder
-Housekeep_HTML_Folder
+#Housekeep_HTML_Folder
 $Projects = Create_Folder
 
 foreach ($Project in $Projects){
