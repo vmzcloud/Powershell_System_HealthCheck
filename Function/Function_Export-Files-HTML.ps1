@@ -25,7 +25,7 @@ function Export-Full-HTML-Page {
 	$SynoNAS_html_content = Export-Table-HTML($CSV_Syno_NAS_file)("Synology_NAS")
 	$SmartUPS_html_content = Export-Table-HTML($CSV_Smart_UPS_file)("Smart_UPS")
 	
-	$HTML_Report_footer = "<script src=myscripts.js charset=UTF-8></script></body></html>"
+	$HTML_Report_footer = "</body></html>"
 	
 	$HTML_Report = $HTML_Report_header + $Update_date + $Con_html_content + $Lin_html_content + $iLo_html_content + $SynoNAS_html_content + $SmartUPS_html_content + $HTML_Report_footer
 	
@@ -40,7 +40,7 @@ function Export-Single-HTML-Page {
 	$today_modified = Get-date
 	$Update_date = "Updated :" + $today_modified
 	$html_content = Export-Table-HTML($csvfilepath)($heading)
-	$HTML_Report_footer = "<script src=myscripts.js charset=UTF-8></script></body></html>"
+	$HTML_Report_footer = "</body></html>"
 	
 	$HTML_Report = $HTML_Report_header + $Update_date + $html_content + $HTML_Report_footer
 	
