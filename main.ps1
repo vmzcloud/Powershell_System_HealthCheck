@@ -15,11 +15,10 @@ foreach ($Project in $Projects){
 
 	if ($Project_name -ne $null){
 		Get_Connectivity_csv($Project_name)
-		#PS_get_iLo_Status_csv($Project_name)
-		#Plink_get_Linux_Basic_csv($Project_name)
+		PS_get_iLo_Status_csv($Project_name)
+		Plink_get_Linux_Basic_csv($Project_name)
 		SNMP_get_Synology_info_csv($Project_name)
 		SNMP_get_Smart_UPS_info_csv($Project_name)
-		#Plink_get_df_csv
 		Export-ALL-HTML($Project_name)
 	}
 }
